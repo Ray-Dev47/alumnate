@@ -1,0 +1,279 @@
+*, 
+*:after, 
+*:before { 
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+  }
+  
+
+  body,
+html {
+  /* color: #555; */
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 2rem;
+    height: 5rem;
+    background: #000;
+  }
+
+  /* main */
+  #section__one{
+    background-color: #fff;
+    width: 30rem;
+    padding: 0 2rem;
+ }
+  #main{
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__logo{
+     padding-top: 2rem
+  }
+  .main__logo img{
+    height: 32px;
+     width: auto;
+  }
+ .logo{
+    margin-top: 1rem;
+ }
+ .login{
+    display: flex;
+    margin-top: 3rem;
+ }
+ .login > p{
+    margin-left: 1rem;
+    font-weight: bolder;
+ }
+ .stages{
+    display: flex;
+    margin: 0 3rem;
+    padding: 3rem 0;
+    width: 350px;
+
+    text-transform: capitalize;
+    justify-content: space-evenly;
+ }
+ .number{
+    margin-right: 2rem;
+ }
+ .illustration{
+    margin-top: 4rem;
+    margin-left: 6rem;
+ }
+ .illustration img{
+    /* margin-left:  2rem; */
+    height: 17rem;
+    width: auto;
+ }
+ .p-data{
+    margin-bottom: 2rem;
+    color: #979ea7;
+  }
+  .alumni> p{
+    margin-top: 1rem;
+    color: #979ea7;
+  }
+
+  #section__two{
+    background-color: #e9f2fc;
+    width: 70rem;
+ }
+ #section__two .wrapper{
+    width: 37rem;
+    padding: 6rem 0 0 10rem;
+ }
+
+ #section__two .wrapper h1{
+    font-size: 20px;
+ }
+
+ form input,
+ form select,
+ form input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #bec2c7;
+  border-radius: 3px;
+}
+
+form label {
+    margin: 2rem 0 0 0; 
+    display: inline-block; 
+    
+    color: #6C7A89;
+    font-weight: bold;
+  }
+
+  form input[type="checkbox"]{
+    /* margin: 0 1em 0 0; */
+    width: auto;
+    display:inline-block;
+    text-align: right;
+  }
+
+  .find__school{
+     text-align: right;
+  }
+  .login{
+    display: flex;
+    align-items: center;
+  }
+
+ .login svg{
+    fill: #339ecc;
+    cursor: pointer;
+  }
+  #svg-layer{
+    fill: #339ecc;
+    font-weight: bold;
+  }
+  #arrow_svg{
+    height: 2rem;
+    width: auto;
+  }
+
+  hr{
+    margin-top: .8rem;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 0;
+  }
+
+.btn button{
+    padding: 12px 60px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #339ecc;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-bottom: 40px;
+    cursor: pointer;
+    }
+
+    .add__school-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #daedf7;
+        margin-top: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+    .add__school-content-1{
+        display: flex;
+
+    }
+    .add__school-content-1 .img__logo{
+        fill: #339ecc;
+        margin-right: 9px;
+    }
+    .add__school-content-2 h4{
+        color: #339ecc;
+    }
+    .add__school-content-1 p{
+        color: #979ea7;
+        font-size: 12px;
+    }
+    
+    
+    
+    /* button, .btn:hover {
+    background-color: #65e2d9;
+    } */
+
+
+  /* end of main */
+
+
+  /* media query */
+  
+  @media (max-width: 45rem) {
+    .nav-container {
+      padding: 0 1.5rem;
+    }
+  }
+ 
+  .nav-button {
+    display: none;
+    margin-right: 2rem;
+    padding: 0;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 45rem) {
+    .nav-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .nav-logo {
+    flex: 1;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .menu-container {
+    display: flex;
+    list-style: none;
+  }
+  
+  @media (max-width: 45rem) {
+    .menu-container {
+      position: absolute;
+      top: 5rem;
+      left: -100%;
+      flex-direction: column;
+      padding: 3rem;
+      width: 15rem;
+      height: calc(100vh - 5rem);
+      background: #222;
+      transition: 0.5s ease;
+    }
+  
+    /* show class will make .menu-container slides in */
+    .show {
+      left: 0;
+    }
+  }
+  
+  .menu-item {
+    margin: 0 1rem;
+  }
+  
+  @media (max-width: 45rem) {
+    .menu-item {
+      margin: 1rem 0;
+    }
+  }
+  
+  .menu-link {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .menu-link:hover {
+    color: turquoise;
+  }
